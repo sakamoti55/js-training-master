@@ -8,10 +8,8 @@ import instruction from "./instruction.md";
 
 また、オブジェクトを要素に持つ配列の場合、注意が必要*/
 const convertData = (input) => {
-  const newData = input.filter((element) => {
-    return element.gender === "男性"
-  })
-  //console.log(newData)
+  const newData = input.filter(({gender}) => gender === "男性")
+  console.log(newData)
   return newData
 };
 
